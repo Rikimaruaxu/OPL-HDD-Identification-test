@@ -137,7 +137,7 @@ struct GameDataEntry
 {
     u32 lba, size;
     struct GameDataEntry *next;
-    char id[APA_IDMAX + 1];
+    char id[APA_IDMAX];
 };
 
 static int hddGetHDLGameInfo(struct GameDataEntry *game, hdl_game_info_t *ginfo)
